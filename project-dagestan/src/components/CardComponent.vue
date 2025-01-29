@@ -7,7 +7,8 @@
     <img :src="image" class="mb-3" alt="Tour image" />
     <h3>{{ title }}</h3>
     <div class="description">
-      <p>{{ description }}</p>
+      <p>{{ description | cutText }}</p>
+      <!-- Применение фильтра cutText -->
       <br />
       <span>Читать далее ...</span>
     </div>
